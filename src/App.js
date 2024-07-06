@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import CircleCardSlider from './Components/Common/CircleCardSlider';
-import { HeroCardData } from './StaticData/HomePageData';
+import logo from "./logo.svg";
+import "./App.css";
+import CircleCardSlider from "./Components/Common/CircleCardSlider";
+import { HeroCardData } from "./StaticData/HomePageData";
 
 function App() {
   return (
     <div className="App">
-     <CircleCardSlider sliderData = {HeroCardData}/>
+      <CircleCardSlider sliderData={HeroCardData} />
     </div>
   );
 }
