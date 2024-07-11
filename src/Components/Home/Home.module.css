@@ -1,0 +1,21 @@
+.container{
+    padding-top: 0vh;
+}
+
+.container .content{
+    position: absolute;
+    top: 25vh;
+    text-align: center;
+    width: 100vw;
+}
+
+@media (max-width: 768px){
+    .container .content{
+        position: relative;
+        top: 5vh;
+        text-align: center;
+        width: 100vw;
+        margin-bottom: 0vh;
+    }
+
+}

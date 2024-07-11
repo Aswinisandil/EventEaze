@@ -15,6 +15,8 @@ import FAQs from "./Components/FAQs/FAQs";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactExpert from "./Components/Contact Expert/ContactExpert";
 import Footer from "./Components/Footer/Footer";
+import CarouselMainPage from "./Components/Common/Carousel/CaourselMainPage";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<CircleCardSlider sliderData={HeroCardData} />} />
+          {/* <Route path="/" element={<CircleCardSlider sliderData={HeroCardData} />} /> */}
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/cart" element={<Cart />} />
@@ -30,8 +32,9 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/blogs" element={<Blogs />} />
+       
+        <Route path="/" element={<Home/>}/>
         </Routes>
-        <ContactExpert/>
         <Footer/>
       </Router>
     </div>

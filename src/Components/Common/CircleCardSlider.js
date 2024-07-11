@@ -5,11 +5,14 @@ import CircleCard from "./CircleCard";
 function CircleCardSlider(props) {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     navs: true,
-    speed: 500,
+    autoplay:true,
+    speed: 2000,
+    autoplaySpeed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    cssEase: "linear"
   };
   return (
     <>
